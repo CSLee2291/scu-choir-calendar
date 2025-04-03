@@ -23,5 +23,14 @@
         "help_step2_desc": "Click on any event to see its details.",
         "help_step3_title": "3. Download",
         "help_step3_desc": "Download the event or add it to your Google Calendar."
+    },
+    "help": {
+        "guide_title": "Usage Guide",
+        "step1_title": "Browse Calendar",
+        "step1_description": "View all upcoming events",
+        "step2_title": "Download Events",
+        "step2_description": "Save events to your calendar",
+        "step3_title": "Share Events",
+        "step3_description": "Share event details with other members"
     }
-  }
+}

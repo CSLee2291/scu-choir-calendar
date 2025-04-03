@@ -14,15 +14,29 @@ const DownloadButtons: React.FC<DownloadButtonsProps> = ({ event }) => {
   const tCalendar = useTranslations('calendar');
   const tCommon = useTranslations('common');
 
-  const handleDownloadICS = () => {
+  const handleDownloadICS = async () => {
     try {
         // Validate event data before generating ICS
         if (!event.start) {
             throw new Error('Event start date is missing');
         }
 
-        const icsString = generateICS(event);
-        const blob = new Blob([icsString], { type: 'text/calendar;charset=utf-8' });
+        // Use the API route to generate the ICS file
+        const response = await fetch('/api/ics', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(event),
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.error || 'Failed to generate calendar file');
+        }
+
+        // Get the blob from the response
+        const blob = await response.blob();
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;

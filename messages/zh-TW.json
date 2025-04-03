@@ -23,5 +23,14 @@
         "help_step2_desc": "點擊任何活動以查看詳細資訊。",
         "help_step3_title": "3. 下載",
         "help_step3_desc": "下載活動檔案或將其新增至您的 Google 日曆。"
+    },
+    "help": {
+        "guide_title": "使用指南",
+        "step1_title": "瀏覽行事曆",
+        "step1_description": "查看所有即將舉行的活動",
+        "step2_title": "下載活動",
+        "step2_description": "將活動儲存到您的行事曆",
+        "step3_title": "分享活動",
+        "step3_description": "與其他團員分享活動資訊"
     }
-  }
+}
