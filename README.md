@@ -55,11 +55,30 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Recent Changes
+
+### Fixed .ics File Download Functionality (2025-04-03)
+
+1. **Server-side .ics Generation**:
+   - Created a new API route at `/api/ics/route.ts` to handle .ics file generation on the server side
+   - Updated the `DownloadButtons.tsx` component to use the new API route for generating and downloading .ics files
+
+2. **Improved Error Handling**:
+   - Added better validation and error handling in both the client and server code
+   - Provided more detailed error messages to the user
+
+3. **Fixed Layout Issues**:
+   - Updated the `[locale]/layout.tsx` file to handle locale parameters correctly
+
 ## Project Structure
 
 ```
 src/
 ├── app/               # Next.js app directory
+│   ├── [locale]/      # Localized routes
+│   └── api/           # API routes
+│       ├── google-calendar/
+│       └── ics/       # .ics file generation API
 ├── lib/              # Utility functions and shared logic
 │   ├── ics-generator.ts
 │   └── types.ts
