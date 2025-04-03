@@ -2,17 +2,14 @@ import React from 'react';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-interface LocaleLayoutProps {
-  children: React.ReactNode;
-  params: {
-    locale: string;
-  };
-}
-
+// Remove the interface since we're not using it
 export default async function LocaleLayout({
   children,
   params: { locale }
-}: LocaleLayoutProps) {
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
   const messages = await getMessages({ locale });
 
   return (
@@ -26,7 +23,6 @@ export default async function LocaleLayout({
   );
 }
 
-// Specify supported locales
 export function generateStaticParams() {
   return [
     { locale: 'en' },

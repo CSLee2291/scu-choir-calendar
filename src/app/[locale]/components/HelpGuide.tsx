@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 
 // Dynamically import icons from the components directory
 const CalendarIcon = dynamic(() => import('../../../components/icons/CalendarIcon'), { ssr: false });
-const DownloadIcon = dynamic(() => import('../../../components/icons/DownloadIcon'), { ssr: false });
+const DownloadIcon = dynamic(() => import('@/components/icons/DownloadIcon'), { ssr: false });
 const ShareIcon = dynamic(() => import('@/components/icons/ShareIcon'), { ssr: false });
 
 const HelpGuide: React.FC = () => {
