@@ -1,0 +1,44 @@
+/scu-choir-calendar
+├── /public
+│   ├── /locales             # <--- next-i18next translations
+│   │   ├── /en
+│   │   │   └── common.json
+│   │   │   └── calendar.json
+│   │   ├── /zh-TW
+│   │   │   └── common.json
+│   │   │   └── calendar.json
+│   ├── /images
+│   │   └── /svg
+│   │       ├── guide-step-1.svg
+│   │       ├── guide-step-2.svg
+│   │       └── guide-step-3.svg
+│   └── favicon.ico
+├── /src
+│   ├── /app
+│   │   ├── /api
+│   │   │   └── /google-calendar  # <--- Server-side API Route
+│   │   │       └── route.ts
+│   │   ├── /[locale]             # <--- Dynamic route for i18n
+│   │   │   ├── layout.tsx        # <--- Locale-specific layout
+│   │   │   ├── page.tsx          # <--- Main calendar page
+│   │   │   └── /components       # <--- Components used within this locale
+│   │   │       ├── CalendarView.tsx
+│   │   │       ├── EventDetailsModal.tsx
+│   │   │       ├── DownloadButtons.tsx
+│   │   │       └── HelpGuide.tsx
+│   │   ├── layout.tsx            # <--- Root layout (html, body)
+│   │   └── global.css            # <--- Global styles (Tailwind imports)
+│   ├── /components             # <--- Shared components (optional)
+│   │   └── LanguageSwitcher.tsx
+│   ├── /lib                    # <--- Utility functions, API clients
+│   │   ├── calendar-api.ts     # <--- Google Calendar fetching logic
+│   │   ├── ics-generator.ts    # <--- .ics file generation
+│   │   └── utils.ts            # <--- Date formatting, etc.
+│   └── /hooks                  # <--- Custom React hooks (optional)
+├── next.config.mjs             # <--- Next.js configuration (incl. i18n setup)
+├── tailwind.config.ts          # <--- Tailwind CSS configuration
+├── postcss.config.js           # <--- PostCSS config (for Tailwind)
+├── tsconfig.json               # <--- TypeScript configuration
+├── package.json
+├── next-i18next.config.js      # <--- next-i18next configuration
+└── .env.local                  # <--- Environment variables (API Keys!)

@@ -81,7 +81,7 @@ export function generateICS(event: CalendarEvent): string {
     }
 
 
-    const eventAttributes: ics.EventAttributes = {
+    const eventAttributes = {
         title: event.title,
         start: startArray,
         startInputType: 'utc', // Specify that the array is UTC
@@ -94,15 +94,15 @@ export function generateICS(event: CalendarEvent): string {
 
     // Add end date if valid
     if (endArray) {
-        eventAttributes.end = endArray;
-        eventAttributes.endInputType = 'utc';
+        Object.assign(eventAttributes, { end: endArray });
+        Object.assign(eventAttributes, { endInputType: 'utc' });
     } else if (!event.allDay && startArray) {
         // If it's a timed event with no end, add a default duration
-        eventAttributes.duration = { hours: 2 };
+        Object.assign(eventAttributes, { duration: { hours: 2 } });
     }
 
 
-    const { error, value } = ics.createEvent(eventAttributes);
+    const { error, value } = ics.createEvent(eventAttributes as ics.EventAttributes);
 
     if (error) {
         console.error("ICS Creation Error:", error);

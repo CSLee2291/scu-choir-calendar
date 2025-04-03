@@ -1,0 +1,27 @@
+{
+    "common": {
+        "choir_name": "東吳大學校友合唱團",
+        "all_rights_reserved": "版權所有",
+        "close": "關閉",
+        "loading": "載入中...",
+        "date_not_available": "日期不可用",
+        "date_invalid": "日期格式無效"
+    },
+    "calendar": {
+        "page_title": "東吳絃訟合唱團行事曆",
+        "date_time": "日期與時間",
+        "location": "地點",
+        "description": "說明",
+        "all_day": "全天",
+        "download_ics": "下載",
+        "add_to_google": "新增至 Google 日曆",
+        "error_generating_ics": "產生行事曆檔案時發生錯誤。",
+        "how_to_use_title": "如何使用此行事曆",
+        "help_step1_title": "1. 瀏覽",
+        "help_step1_desc": "依月、週或列表檢視行事曆。",
+        "help_step2_title": "2. 點擊活動",
+        "help_step2_desc": "點擊任何活動以查看詳細資訊。",
+        "help_step3_title": "3. 下載",
+        "help_step3_desc": "下載活動檔案或將其新增至您的 Google 日曆。"
+    }
+  }

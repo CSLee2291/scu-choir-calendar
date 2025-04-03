@@ -1,0 +1,27 @@
+{
+    "common": {
+        "choir_name": "SCU Alumni Choir",
+        "all_rights_reserved": "All Rights Reserved",
+        "close": "Close",
+        "loading": "Loading...",
+        "date_not_available": "Date not available",
+        "date_invalid": "Invalid date format"
+    },
+    "calendar": {
+        "page_title": "SCU Alumni Choir Calendar",
+        "date_time": "Date & Time",
+        "location": "Location",
+        "description": "Description",
+        "all_day": "All Day",
+        "download_ics": "Download",
+        "add_to_google": "Add to Google Calendar",
+        "error_generating_ics": "Error generating calendar file.",
+        "how_to_use_title": "How to Use This Calendar",
+        "help_step1_title": "1. Browse",
+        "help_step1_desc": "View the calendar by month, week, or list.",
+        "help_step2_title": "2. Click Event",
+        "help_step2_desc": "Click on any event to see its details.",
+        "help_step3_title": "3. Download",
+        "help_step3_desc": "Download the event or add it to your Google Calendar."
+    }
+  }

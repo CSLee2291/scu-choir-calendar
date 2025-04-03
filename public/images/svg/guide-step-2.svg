@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <!-- Background -->
+  <rect width="800" height="500" fill="#f8f9fa" rx="10" ry="10"/>
+  
+  <!-- Header -->
+  <rect x="50" y="30" width="700" height="60" fill="#4285f4" rx="8" ry="8"/>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle">Step 2: Sign in to Your Google Account</text>
+  
+  <!-- Login form -->
+  <rect x="250" y="120" width="300" height="320" fill="white" stroke="#dadce0" stroke-width="2" rx="8" ry="8"/>
+  
+  <!-- Google Logo -->
+  <g transform="translate(400, 160) scale(0.8)">
+    <path d="M-50,0 A50,50 0 1,1 50,0 A50,50 0 1,1 -50,0 Z" fill="none" stroke="#4285f4" stroke-width="12"/>
+    <path d="M-25,-43.3 L-25,43.3" stroke="#ea4335" stroke-width="12" stroke-linecap="round"/>
+    <path d="M-25,-43.3 L25,-43.3" stroke="#fbbc04" stroke-width="12" stroke-linecap="round"/>
+    <path d="M25,-43.3 L25,0" stroke="#34a853" stroke-width="12" stroke-linecap="round"/>
+    <path d="M25,0 C25,25 0,43.3 -25,43.3" stroke="#4285f4" stroke-width="12" stroke-linecap="round" fill="none"/>
+  </g>
+  
+  <!-- Sign in text -->
+  <text x="400" y="210" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#202124" text-anchor="middle">Sign in</text>
+  <text x="400" y="235" font-family="Arial, sans-serif" font-size="16" fill="#5f6368" text-anchor="middle">to continue to Google Calendar</text>
+  
+  <!-- Email/phone input -->
+  <rect x="280" y="260" width="240" height="50" fill="white" stroke="#dadce0" stroke-width="1" rx="4" ry="4"/>
+  <text x="300" y="279" font-family="Arial, sans-serif" font-size="14" fill="#80868b">Email or phone</text>
+  
+  <!-- Forgot email link -->
+  <text x="320" y="330" font-family="Arial, sans-serif" font-size="14" fill="#1a73e8">Forgot email?</text>
+  
+  <!-- Privacy notice -->
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="12" fill="#5f6368" text-anchor="middle">Not your computer? Use Guest mode to sign in privately.</text>
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="12" fill="#1a73e8" text-anchor="middle">Learn more</text>
+  
+  <!-- Buttons -->
+  <text x="300" y="410" font-family="Arial, sans-serif" font-size="14" fill="#1a73e8">Create account</text>
+  <rect x="450" y="395" width="70" height="30" fill="#1a73e8" rx="4" ry="4"/>
+  <text x="485" y="415" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">Next</text>
+  
+  <!-- Mouse cursor -->
+  <g transform="translate(485, 410)">
+    <path d="M0,0 L-10,-20 L10,-15 L0,0" fill="black"/>
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="400,300"
+      to="485,410"
+      begin="0.5s"
+      dur="1.5s"
+      fill="freeze"/>
+  </g>
+  
+  <!-- Instructions -->
+  <text x="400" y="470" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#202124" text-anchor="middle">Enter your Google account credentials and sign in</text>
+</svg>
