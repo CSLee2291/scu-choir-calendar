@@ -1,7 +1,6 @@
 "use client"; // Needed for LanguageSwitcher interaction
 
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import LanguageSwitcher from './LanguageSwitcher'; // Assuming it's in the same directory
 
 interface HeaderProps {
@@ -9,9 +8,6 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({ locale }) => {
-  //const { t } = useTranslations('common');
-  const tCommon = useTranslations('common');
-
   // Determine title based on locale for display
   const displayTitle = locale === 'zh-TW' ? '東吳絃訟合唱團行事曆' : 'SCU Alumni Choir Calendar';
 

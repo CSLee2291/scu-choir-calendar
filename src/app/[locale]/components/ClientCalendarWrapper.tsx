@@ -4,6 +4,7 @@ import { useParams } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
 import dynamic from 'next/dynamic';
 import messages from './messages';
+import { Header } from './Header';
 
 // Use dynamic import with no SSR to avoid hydration issues
 const ClientCalendar = dynamic(
@@ -20,7 +21,12 @@ export default function ClientCalendarWrapper() {
 
   return (
     <NextIntlClientProvider locale={locale} messages={localeMessages}>
-      <ClientCalendar />
+      <div className="flex flex-col min-h-screen">
+        <Header locale={locale} />
+        <main className="flex-grow container mx-auto px-4 py-8">
+          <ClientCalendar />
+        </main>
+      </div>
     </NextIntlClientProvider>
   );
 }

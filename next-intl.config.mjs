@@ -5,10 +5,13 @@ export const defaultLocale = 'zh-TW';
 export default {
   // Define the locales supported by your application
   locales,
-  
+
   // Set the default locale
   defaultLocale,
-  
+
+  // Set the default time zone
+  timeZone: 'Asia/Taipei',
+
   // Define how to load messages
   // This function will be called for each locale that needs to be loaded
   getMessages: async (locale) => {

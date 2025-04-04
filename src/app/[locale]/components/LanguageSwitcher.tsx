@@ -1,11 +1,10 @@
 "use client";
 
 import { usePathname, useRouter } from 'next/navigation'; // Use from next/navigation
-import { useLocale, useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import { locales } from 'i18n'; // Use absolute path from src
 
 export default function LanguageSwitcher() {
-  const t = useTranslations('common'); // Or a dedicated namespace
   const currentLocale = useLocale();
   const router = useRouter();
   const currentPathname = usePathname(); // Includes locale prefix if present

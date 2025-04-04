@@ -44,7 +44,7 @@ export default function ClientCalendar({ locale: propLocale }: ClientCalendarPro
   };
 
   return (
-    <div className="space-y-12">
+    <>
       <CalendarView
         locale={locale}
         onEventClick={handleEventClick}
@@ -60,6 +60,6 @@ export default function ClientCalendar({ locale: propLocale }: ClientCalendarPro
           locale={locale}
         />
       )}
-    </div>
+    </>
   );
 }
